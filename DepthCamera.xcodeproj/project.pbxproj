@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8512AC3E2BC93CBF0022BF73 /* CameraCaptureButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8512AC3D2BC93CBF0022BF73 /* CameraCaptureButton.swift */; };
+		8512AC402BC93E3B0022BF73 /* GalleryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8512AC3F2BC93E3B0022BF73 /* GalleryButton.swift */; };
+		8512AC432BC93E8B0022BF73 /* CaptureFolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8512AC422BC93E8B0022BF73 /* CaptureFolderView.swift */; };
+		856BC19D2BC65173004B3472 /* RoomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 856BC19C2BC65173004B3472 /* RoomController.swift */; };
+		858200232BC52A3400AC663D /* ARSessionTestingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200222BC52A3400AC663D /* ARSessionTestingApp.swift */; };
+		858200252BC52A3400AC663D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200242BC52A3400AC663D /* ContentView.swift */; };
+		858200272BC52A3400AC663D /* LidarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200262BC52A3400AC663D /* LidarController.swift */; };
+		858200292BC52A3500AC663D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858200282BC52A3500AC663D /* Assets.xcassets */; };
+		8582002C2BC52A3500AC663D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8582002B2BC52A3500AC663D /* Preview Assets.xcassets */; };
+		858200362BC52A3500AC663D /* ARSessionTestingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200352BC52A3500AC663D /* ARSessionTestingTests.swift */; };
+		858200402BC52A3500AC663D /* ARSessionTestingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582003F2BC52A3500AC663D /* ARSessionTestingUITests.swift */; };
+		858200422BC52A3500AC663D /* ARSessionTestingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200412BC52A3500AC663D /* ARSessionTestingUITestsLaunchTests.swift */; };
+		858200512BC52F0D00AC663D /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 858200502BC52F0D00AC663D /* FocusEntity */; };
+		858200532BC5370D00AC663D /* AppDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200522BC5370D00AC663D /* AppDataModel.swift */; };
+		858200552BC5379000AC663D /* AppDataModel+State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200542BC5379000AC663D /* AppDataModel+State.swift */; };
+		858200572BC552F200AC663D /* ObjectCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200562BC552F200AC663D /* ObjectCaptureSessionManager.swift */; };
+		858200592BC5530100AC663D /* RoomCaptureSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858200582BC5530100AC663D /* RoomCaptureSessionManager.swift */; };
+		8582005B2BC5531800AC663D /* LidarSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582005A2BC5531800AC663D /* LidarSessionManager.swift */; };
+		8582005D2BC5539600AC663D /* SessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8582005C2BC5539600AC663D /* SessionProtocol.swift */; };
+		85A39FF52BCE4DD800DFE3E0 /* FetchModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A39FF42BCE4DD800DFE3E0 /* FetchModelView.swift */; };
+		85A39FF72BCEB06C00DFE3E0 /* CaptureFolderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A39FF62BCEB06C00DFE3E0 /* CaptureFolderManager.swift */; };
+		85A39FF92BCEC9D800DFE3E0 /* Mesh+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85A39FF82BCEC9D800DFE3E0 /* Mesh+Ext.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		858200322BC52A3500AC663D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858200172BC52A3400AC663D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8582001E2BC52A3400AC663D;
+			remoteInfo = ARSessionTesting;
+		};
+		8582003C2BC52A3500AC663D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 858200172BC52A3400AC663D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8582001E2BC52A3400AC663D;
+			remoteInfo = ARSessionTesting;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8512AC3D2BC93CBF0022BF73 /* CameraCaptureButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraCaptureButton.swift; sourceTree = "<group>"; };
+		8512AC3F2BC93E3B0022BF73 /* GalleryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryButton.swift; sourceTree = "<group>"; };
+		8512AC422BC93E8B0022BF73 /* CaptureFolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFolderView.swift; sourceTree = "<group>"; };
+		856BC19C2BC65173004B3472 /* RoomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomController.swift; sourceTree = "<group>"; };
+		8582001F2BC52A3400AC663D /* DepthCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DepthCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858200222BC52A3400AC663D /* ARSessionTestingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionTestingApp.swift; sourceTree = "<group>"; };
+		858200242BC52A3400AC663D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		858200262BC52A3400AC663D /* LidarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidarController.swift; sourceTree = "<group>"; };
+		858200282BC52A3500AC663D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8582002B2BC52A3500AC663D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		858200312BC52A3500AC663D /* DepthCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepthCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		858200352BC52A3500AC663D /* ARSessionTestingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionTestingTests.swift; sourceTree = "<group>"; };
+		8582003B2BC52A3500AC663D /* DepthCameraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DepthCameraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8582003F2BC52A3500AC663D /* ARSessionTestingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionTestingUITests.swift; sourceTree = "<group>"; };
+		858200412BC52A3500AC663D /* ARSessionTestingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARSessionTestingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8582004E2BC52CEC00AC663D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		858200522BC5370D00AC663D /* AppDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataModel.swift; sourceTree = "<group>"; };
+		858200542BC5379000AC663D /* AppDataModel+State.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDataModel+State.swift"; sourceTree = "<group>"; };
+		858200562BC552F200AC663D /* ObjectCaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectCaptureSessionManager.swift; sourceTree = "<group>"; };
+		858200582BC5530100AC663D /* RoomCaptureSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomCaptureSessionManager.swift; sourceTree = "<group>"; };
+		8582005A2BC5531800AC663D /* LidarSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LidarSessionManager.swift; sourceTree = "<group>"; };
+		8582005C2BC5539600AC663D /* SessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionProtocol.swift; sourceTree = "<group>"; };
+		85A39FF42BCE4DD800DFE3E0 /* FetchModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchModelView.swift; sourceTree = "<group>"; };
+		85A39FF62BCEB06C00DFE3E0 /* CaptureFolderManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureFolderManager.swift; sourceTree = "<group>"; };
+		85A39FF82BCEC9D800DFE3E0 /* Mesh+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Mesh+Ext.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8582001C2BC52A3400AC663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858200512BC52F0D00AC663D /* FocusEntity in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8582002E2BC52A3500AC663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858200382BC52A3500AC663D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8512AC3C2BC93C9F0022BF73 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8512AC3D2BC93CBF0022BF73 /* CameraCaptureButton.swift */,
+				8512AC3F2BC93E3B0022BF73 /* GalleryButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		8512AC412BC93E740022BF73 /* CaptureFolder */ = {
+			isa = PBXGroup;
+			children = (
+				8512AC422BC93E8B0022BF73 /* CaptureFolderView.swift */,
+				85A39FF42BCE4DD800DFE3E0 /* FetchModelView.swift */,
+				85A39FF62BCEB06C00DFE3E0 /* CaptureFolderManager.swift */,
+				85A39FF82BCEC9D800DFE3E0 /* Mesh+Ext.swift */,
+			);
+			path = CaptureFolder;
+			sourceTree = "<group>";
+		};
+		858200162BC52A3400AC663D = {
+			isa = PBXGroup;
+			children = (
+				858200212BC52A3400AC663D /* DepthCamera */,
+				858200342BC52A3500AC663D /* DepthCameraTests */,
+				8582003E2BC52A3500AC663D /* DepthCameraUITests */,
+				858200202BC52A3400AC663D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		858200202BC52A3400AC663D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8582001F2BC52A3400AC663D /* DepthCamera.app */,
+				858200312BC52A3500AC663D /* DepthCameraTests.xctest */,
+				8582003B2BC52A3500AC663D /* DepthCameraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858200212BC52A3400AC663D /* DepthCamera */ = {
+			isa = PBXGroup;
+			children = (
+				8512AC412BC93E740022BF73 /* CaptureFolder */,
+				8512AC3C2BC93C9F0022BF73 /* UI */,
+				858200602BC590D500AC663D /* ARLidar */,
+				8582005F2BC590BD00AC663D /* Object */,
+				8582005E2BC590B800AC663D /* Room */,
+				8582004E2BC52CEC00AC663D /* Info.plist */,
+				858200522BC5370D00AC663D /* AppDataModel.swift */,
+				858200542BC5379000AC663D /* AppDataModel+State.swift */,
+				858200222BC52A3400AC663D /* ARSessionTestingApp.swift */,
+				8582005C2BC5539600AC663D /* SessionProtocol.swift */,
+				858200242BC52A3400AC663D /* ContentView.swift */,
+				858200282BC52A3500AC663D /* Assets.xcassets */,
+				8582002A2BC52A3500AC663D /* Preview Content */,
+			);
+			path = DepthCamera;
+			sourceTree = "<group>";
+		};
+		8582002A2BC52A3500AC663D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				8582002B2BC52A3500AC663D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		858200342BC52A3500AC663D /* DepthCameraTests */ = {
+			isa = PBXGroup;
+			children = (
+				858200352BC52A3500AC663D /* ARSessionTestingTests.swift */,
+			);
+			path = DepthCameraTests;
+			sourceTree = "<group>";
+		};
+		8582003E2BC52A3500AC663D /* DepthCameraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8582003F2BC52A3500AC663D /* ARSessionTestingUITests.swift */,
+				858200412BC52A3500AC663D /* ARSessionTestingUITestsLaunchTests.swift */,
+			);
+			path = DepthCameraUITests;
+			sourceTree = "<group>";
+		};
+		8582005E2BC590B800AC663D /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				858200582BC5530100AC663D /* RoomCaptureSessionManager.swift */,
+				856BC19C2BC65173004B3472 /* RoomController.swift */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		8582005F2BC590BD00AC663D /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				858200562BC552F200AC663D /* ObjectCaptureSessionManager.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		858200602BC590D500AC663D /* ARLidar */ = {
+			isa = PBXGroup;
+			children = (
+				8582005A2BC5531800AC663D /* LidarSessionManager.swift */,
+				858200262BC52A3400AC663D /* LidarController.swift */,
+			);
+			path = ARLidar;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8582001E2BC52A3400AC663D /* DepthCamera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858200452BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCamera" */;
+			buildPhases = (
+				8582001B2BC52A3400AC663D /* Sources */,
+				8582001C2BC52A3400AC663D /* Frameworks */,
+				8582001D2BC52A3400AC663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DepthCamera;
+			packageProductDependencies = (
+				858200502BC52F0D00AC663D /* FocusEntity */,
+			);
+			productName = ARSessionTesting;
+			productReference = 8582001F2BC52A3400AC663D /* DepthCamera.app */;
+			productType = "com.apple.product-type.application";
+		};
+		858200302BC52A3500AC663D /* DepthCameraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858200482BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCameraTests" */;
+			buildPhases = (
+				8582002D2BC52A3500AC663D /* Sources */,
+				8582002E2BC52A3500AC663D /* Frameworks */,
+				8582002F2BC52A3500AC663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				858200332BC52A3500AC663D /* PBXTargetDependency */,
+			);
+			name = DepthCameraTests;
+			productName = ARSessionTestingTests;
+			productReference = 858200312BC52A3500AC663D /* DepthCameraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8582003A2BC52A3500AC663D /* DepthCameraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8582004B2BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCameraUITests" */;
+			buildPhases = (
+				858200372BC52A3500AC663D /* Sources */,
+				858200382BC52A3500AC663D /* Frameworks */,
+				858200392BC52A3500AC663D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8582003D2BC52A3500AC663D /* PBXTargetDependency */,
+			);
+			name = DepthCameraUITests;
+			productName = ARSessionTestingUITests;
+			productReference = 8582003B2BC52A3500AC663D /* DepthCameraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858200172BC52A3400AC663D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					8582001E2BC52A3400AC663D = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					858200302BC52A3500AC663D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8582001E2BC52A3400AC663D;
+					};
+					8582003A2BC52A3500AC663D = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 8582001E2BC52A3400AC663D;
+					};
+				};
+			};
+			buildConfigurationList = 8582001A2BC52A3400AC663D /* Build configuration list for PBXProject "DepthCamera" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 858200162BC52A3400AC663D;
+			packageReferences = (
+				8582004F2BC52F0D00AC663D /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
+			productRefGroup = 858200202BC52A3400AC663D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8582001E2BC52A3400AC663D /* DepthCamera */,
+				858200302BC52A3500AC663D /* DepthCameraTests */,
+				8582003A2BC52A3500AC663D /* DepthCameraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8582001D2BC52A3400AC663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8582002C2BC52A3500AC663D /* Preview Assets.xcassets in Resources */,
+				858200292BC52A3500AC663D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8582002F2BC52A3500AC663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858200392BC52A3500AC663D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8582001B2BC52A3400AC663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858200252BC52A3400AC663D /* ContentView.swift in Sources */,
+				858200592BC5530100AC663D /* RoomCaptureSessionManager.swift in Sources */,
+				85A39FF92BCEC9D800DFE3E0 /* Mesh+Ext.swift in Sources */,
+				8512AC402BC93E3B0022BF73 /* GalleryButton.swift in Sources */,
+				856BC19D2BC65173004B3472 /* RoomController.swift in Sources */,
+				8512AC432BC93E8B0022BF73 /* CaptureFolderView.swift in Sources */,
+				858200532BC5370D00AC663D /* AppDataModel.swift in Sources */,
+				8582005B2BC5531800AC663D /* LidarSessionManager.swift in Sources */,
+				8582005D2BC5539600AC663D /* SessionProtocol.swift in Sources */,
+				858200572BC552F200AC663D /* ObjectCaptureSessionManager.swift in Sources */,
+				858200272BC52A3400AC663D /* LidarController.swift in Sources */,
+				85A39FF52BCE4DD800DFE3E0 /* FetchModelView.swift in Sources */,
+				85A39FF72BCEB06C00DFE3E0 /* CaptureFolderManager.swift in Sources */,
+				858200552BC5379000AC663D /* AppDataModel+State.swift in Sources */,
+				858200232BC52A3400AC663D /* ARSessionTestingApp.swift in Sources */,
+				8512AC3E2BC93CBF0022BF73 /* CameraCaptureButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8582002D2BC52A3500AC663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858200362BC52A3500AC663D /* ARSessionTestingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		858200372BC52A3500AC663D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				858200402BC52A3500AC663D /* ARSessionTestingUITests.swift in Sources */,
+				858200422BC52A3500AC663D /* ARSessionTestingUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		858200332BC52A3500AC663D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8582001E2BC52A3400AC663D /* DepthCamera */;
+			targetProxy = 858200322BC52A3500AC663D /* PBXContainerItemProxy */;
+		};
+		8582003D2BC52A3500AC663D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8582001E2BC52A3400AC663D /* DepthCamera */;
+			targetProxy = 8582003C2BC52A3500AC663D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		858200432BC52A3500AC663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		858200442BC52A3500AC663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		858200462BC52A3500AC663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARSessionTesting/Preview Content\"";
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DepthCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.DepthCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		858200472BC52A3500AC663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ARSessionTesting/Preview Content\"";
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DepthCamera/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.DepthCamera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		858200492BC52A3500AC663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.ARSessionTestingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepthCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DepthCamera";
+			};
+			name = Debug;
+		};
+		8582004A2BC52A3500AC663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.ARSessionTestingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DepthCamera.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DepthCamera";
+			};
+			name = Release;
+		};
+		8582004C2BC52A3500AC663D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.ARSessionTestingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARSessionTesting;
+			};
+			name = Debug;
+		};
+		8582004D2BC52A3500AC663D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UD5QYA93DZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SpatialDS.ARSessionTestingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ARSessionTesting;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8582001A2BC52A3400AC663D /* Build configuration list for PBXProject "DepthCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858200432BC52A3500AC663D /* Debug */,
+				858200442BC52A3500AC663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858200452BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCamera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858200462BC52A3500AC663D /* Debug */,
+				858200472BC52A3500AC663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858200482BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCameraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858200492BC52A3500AC663D /* Debug */,
+				8582004A2BC52A3500AC663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8582004B2BC52A3500AC663D /* Build configuration list for PBXNativeTarget "DepthCameraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8582004C2BC52A3500AC663D /* Debug */,
+				8582004D2BC52A3500AC663D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8582004F2BC52F0D00AC663D /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = versionRange;
+				maximumVersion = 3.0.0;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		858200502BC52F0D00AC663D /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8582004F2BC52F0D00AC663D /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 858200172BC52A3400AC663D /* Project object */;
+}
