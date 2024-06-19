@@ -1,5 +1,6 @@
 # DepthCamera
 <img src="https://github.com/garfield0xff/DepthCamera/assets/170846390/4fc539e1-2acf-4a14-8753-e545a93a3335" width="200" height="400"/>
+<img src="https://github.com/garfield0xff/DepthCamera/assets/170846390/dfbefc8c-d25b-4177-92a1-db974c8c1612" width="200" height="400"/>
 
 
 ## Project
